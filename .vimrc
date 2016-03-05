@@ -37,6 +37,7 @@ map j gj
 map k gk
 
 let g:auto_save = 1
+let g:auto_save_silent = 1
 let g:auto_save_in_insert_mode = 0
 
 " Disable highlight when <leader><cr> is pressed
@@ -72,6 +73,9 @@ syntax on
 filetype plugin indent on
 
 let g:netrw_liststyle=3
+
+let g:session_directory="~/.vim_sessions/"
+let g:session_default_to_last=1
 
 map <C-e> :MRU<CR>
 "map <A-1> :Vex<CR><C-w>r
