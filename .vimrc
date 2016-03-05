@@ -1,10 +1,15 @@
 se t_Co=24
 
 if has('gui')
-  colorscheme xterm16
+  colorscheme hilal
 else
   colorscheme darkblue
 endif
+
+set completeopt=longest,menuone
+autocmd FileType typescript map <C-b> <C-]>
+"set ballooneval
+"autocmd FileType typescript setlocal balloonexpr=tsuquyomi#balloonexpr()
 
 set backspace=indent,eol,start
 set whichwrap+=<,>,h,l
@@ -30,11 +35,13 @@ set ffs=unix,dos,mac
 
 set expandtab
 set smarttab
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 
 map j gj
 map k gk
+
+imap <C-space> <C-x><C-o>
 
 let g:auto_save = 1
 let g:auto_save_silent = 1
