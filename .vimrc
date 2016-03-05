@@ -35,7 +35,10 @@ set tabstop=2
 
 map j gj
 map k gk
-"
+
+let g:auto_save = 1
+let g:auto_save_in_insert_mode = 0
+
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
 
